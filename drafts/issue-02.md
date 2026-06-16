@@ -1,11 +1,12 @@
-📱 What I've been reading this week — iOS edition #<N>
+📱 What I've been reading this week — iOS edition #2
 
 <One-line theme or hook>
 
-1. <Article title>
-   🔗 <link>
-   TL;DR: <one line, plain English>
-   My take: <1–2 sentences — why it matters / where you'd apply it / what you'd do differently>
+1. SwiftUI’s @State is now a macro
+   🔗 https://livsycode.com/swiftui/swiftuis-state-is-now-a-macro/
+   TL;DR: @State marked dependencies are now lazily initialised once for the lifetime of a View.
+   Before @State was a property wrapper, and @State marked value inits were called on every view value creation. This meant expensive or side-effectual inits could cause unexpected behaviour in your App. The macro implementation eliminates this problem.
+   My take: Changing from a property wrapper to a Macro is not interesting. But The payoff is huge - A host of unwanted @State init bugs are gone. So Apple has improved the behaviour of SwiftUI's state managment system. Its also clear prefer inexpensive inits for your @State dependencies, and ensure your dependencies do not have any unwanted side-effects.
 
 2. <Article title>
    🔗 <link>
