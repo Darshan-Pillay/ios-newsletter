@@ -10,12 +10,9 @@
 
 2. ContentUnavailableView in SwiftUI - Complete Guide With Examples
    🔗 https://www.sagarunagar.com/blog/contentunavailableview-swiftui/
-   TL;DR: 
-   - Production ready examples
-   - For native thoughtful UI/UX expereince opt for coneten unavailble view
-   - For more branded empty states you are better off writing your own
-   My take: Prefer ContentUnavailableView as your standard choice for empty state implementations which do not require heavy brand driven designs. Apple is providing API's and expereince with excpetional product thinking and UI/UX experience out of the box. The tools are there to delight users and customers without a lot of effort
-
+   TL;DR: ContentUnavailableView (iOS17+) is the canonical example of the empty state. For a polished, platform consistent empty state with good accessibility out of the box, prefer ContentUnavailableView. If you require brand specific or the empty state is complex (e.g in an interactive tutorial), prefer custom empty states.
+   My take: Empty states drive user behaviour and perception. A user must know when something goes wrong, and what to do. Also they should feel good while in your app. This is a real product problem which ContentUnavailableView solves. Before time sunk creating empty states from scracth. Now empty states are declarative primitive in SwiftUI. Zero friction. It is now even easier to create beautiful, accessible, and memorable products on Apple devices with SwiftUI. Our users will smile. And businesses will see sustained revenue with their mobile products. Huge win.
+   
 3. Using Claude with Apple Foundation Models
    🔗 https://artemnovichkov.com/blog/using-claude-with-apple-foundation-models
    TL;DR: <one line>
